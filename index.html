@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pou Educação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="framediv"><iframe width="300" height="300" src="https://www.youtube.com/embed/l2EYeyYfAyo?si=zi8QC5NGSCYviI9s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+    <div id="pou"></div>
+    <div id="cesta"></div>
+    <div id="chao"></div>
+
+    <script>
+        var pou = document.querySelector("#pou")
+        var rect = pou.getBoundingClientRect();
+        window.addEventListener("mousemove", (pos) => {
+            pou.style.transform = "translate3d("+ (pos.pageX - rect.top) +"px,20px,0px)"
+        })
+    </script>
+</body>
+</html>

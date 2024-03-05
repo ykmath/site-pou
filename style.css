@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(img/wallpaper.webp);
+    scrollbar-width: 0vw;
+}
+
+#framediv{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: rotat 10s linear infinite;
+}
+
+@keyframes rotat{
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+#pou{
+    background-image: url(img/pou.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 60vh;
+    left: 15vw;
+}
+
+#cesta{
+    background-image: url(img/cesta.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    right: 20px;
+    top: 70px;
+}
+
+#chao{
+    background-image: url(img/chao2.png);
+    background-size: contain;
+    height: 600px;
+    margin-top: -5vh;
+}
+
